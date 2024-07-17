@@ -1,15 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layout/Root";
-import Dashboard from "../pages/Dashboard/Dashboard";
+import SendMoney from "../components/SendMoney/SendMoney";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
-        children:[
+        children: [
             {
-                path:'/',
-                element:<Dashboard/>
+                path: 'sendMoney',
+                element: <SendMoney />
             }
         ]
     }
